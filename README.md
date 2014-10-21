@@ -1,4 +1,10 @@
 GenoquantR
 ==========
 
-A Python graphical front end for qPCR analysis and report generation using the “qpcR” and “knitr” R language packages, currently implemented for Windows
+A Python graphical front end for qPCR analysis and report generation using the "qpcR" and "knitr", currently implemented for Windows
+
+This is a working program but is fairly limited in function at the moment. It will analyze a qPCR data file that is tab or white-space delineated and quantify it the results using the MAC2 model of qPCR kinetics. NOTE: as currently written, the columns in the data file must represent individual reactions and rows must represent cycle fluorescence readings. The program will apply an offset to all wells of the run equally and will produce a PDF report with sample ID, MAC2 curve fit and quantification for every well in the inputed qPCR data file.
+
+For this program to function, the R language interpreter needs to be installed and it needs to be synced to one of the R repositories so that missing packages will be downloaded on the fly. 
+
+Far more work is needed in this description. A skilled programmer with understanding of qPCR can probably figure it out; sorry everyone else (I realize that is pretty much everyone else), my goal is to get to you with something very easy. 
